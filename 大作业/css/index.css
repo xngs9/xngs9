@@ -1,0 +1,77 @@
+/* 首页css样式 */
+/* 版心居中 */
+.wrapper{
+	margin: 0 auto;
+	width: 1200px;
+	
+}
+body{
+	background-color: #f3f5f7;
+}
+/* 头部 */
+.one1{
+	height: 100px;
+	background-color: #fff;
+}
+.one1 .wrapper	{
+	padding: 30px;
+	display: flex;
+	
+}
+/* logo */
+.logo a{
+	display: block;
+	width: 195px;
+	height: 40px;
+	background-image: url(../images/logo.png);
+	/* 隐藏名字 */
+	font-size: 0;
+}
+.nav{
+	margin-left: 100px;
+	
+}
+.nav ul{
+	display: flex;
+}
+.nav li{
+	margin-right: 32px;
+}
+.nav li a{
+	padding: 0 8px;
+	padding: 6px 8px;
+	display: block;
+	font-size: 19px;
+	color: #333;
+}
+.nav li:hover{
+	/* solid是实线的意思 */
+	border-bottom: 2px solid #00a4ff;
+}
+.search{
+	width: 412px;
+	height: 40px;
+	background-color: #f3f5f7;
+	/* 圆角 */
+	border-radius: 20px;
+	margin-left: 64px;
+	padding-left: 20px;
+	
+	display: flex;
+}
+.search input{
+	flex: 1;
+	border: 0;
+	/* transparent是设置透明 */
+	background-color: transparent;
+	/* 去除表单控件的焦点框（边框线） */
+	outline: none;
+}
+/* ::placeholder选中的是placeholder属性文字样式，可以使用文件样式 */
+.search input::placeholder{
+	color: #999;
+}
+.search a{
+	width: 16px;
+	height: 16px;
+}
